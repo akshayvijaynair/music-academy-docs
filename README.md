@@ -27,4 +27,5 @@ The product should be customizable depending on the services type. Depending on 
 
 ## Software Design Document
 
-1. ![Use Case](./docs/assets/use-case.png)
+### Use Case Diagram
+![Use Case](./docs/assets/use-case.png)
