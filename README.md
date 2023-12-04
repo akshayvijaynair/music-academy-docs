@@ -24,3 +24,7 @@ The product should be customizable depending on the services type. Depending on 
 5.	Ability for teachers to broadcast internal messages, livestream classes.
 6.	Ability to group teachers together to create larger institutions.
 
+
+## Software Design Document
+
+1. ![Use Case](/docs/use-case)
