@@ -29,3 +29,14 @@ The product should be customizable depending on the services type. Depending on 
 
 ### Use Case Diagram
 ![Use Case](./docs/assets/use-case.png)
+
+### UML Class Diagram
+![UML Class](./docs/assets/uml-classes.png)
+
+### Sequence diagram
+
+<details>
+  <summary> #### Authentication flow </summary>
+ ![UML Class](./docs/assets/uml-classes.png)
+</details>
+
