@@ -36,7 +36,34 @@ The product should be customizable depending on the services type. Depending on 
 ### Sequence diagram
 
 <details>
-  <summary> #### Authentication flow </summary>
- ![UML Class](./docs/assets/uml-classes.png)
+  <summary> Authentication flow </summary>
+  
+ #### Authentication flow  
+![UML Class](./docs/assets/seq-dia-auth.png)
+
+</details>
+
+<details>
+  <summary> Visitor Flow </summary>
+  
+ #### Visitor flow  
+![UML Class](./docs/assets/seq-dia-visitor-flow.png)
+
+</details>
+
+<details>
+  <summary> Student flow </summary>
+  
+ #### Student flow  
+![UML Class](./docs/assets/seq-dia-student-flow.png)
+
+</details>
+
+<details>
+  <summary> Teacher flow </summary>
+  
+ #### Teacher flow  
+![UML Class](./docs/assets/seq-dia-teacher-flow.png)
+
 </details>
 
