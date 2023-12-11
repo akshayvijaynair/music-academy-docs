@@ -307,6 +307,83 @@ The product should be customizable depending on the services type. Depending on 
 </details>
 
 <details>
+    <summary> Manage Classes </summary>
+
+| Description Item         | Description                                                                                      |
+|---------------------------|--------------------------------------------------------------------------------------------------|
+| Use Case ID               | 6                                                                                                |
+| Use Case Description      | Teacher Manages Content, Uploads Grades, Schedules, and Adds New Users                           |
+| Corresponds to Need and Requirement | 4, 6, 7 9, 10, 11, 12, 14                                                                        |
+|                           |                                                                                                  |
+| Actor                     | Teacher                                                                                          |
+| Stakeholders and Needs    | Teacher - To securely manage course content, upload grades, schedule classes, and add new users. |
+|                           | Admin - To manage user access and handle new user additions.                                     |
+|                           |                                                                                                  |
+| Pre-conditions            | Teacher is authenticated and has a valid user session.                                           |
+| Trigger                   | Teacher successfully logs in.                                                                    |
+| Post-conditions           | Teacher manages content, uploads grades, schedules classes, and adds new users.                  |
+|                           |                                                                                                  |
+| Basic flow                | 1. Teacher logs into the platform using valid credentials.                                       |
+|                           | 2. Authorization Server verifies teacher identity.                                               |
+|                           | 3. If valid, Authorization Server issues an access token.                                        |
+|                           | 4. Teacher is redirected to the post-login teacher dashboard.                                    |
+|                           | 5. Teacher manages course content (uploading materials, updating resources).                     |
+|                           | 6. Teacher uploads grades for students.                                                          |
+|                           | 7. Teacher schedules upcoming classes.                                                           |
+|                           | 8. Teacher adds new users to the platform.                                                       |
+|                           |                                                                                                  |
+| Extensions                | 1a Teacher enters invalid credentials.                                                           |
+|                           | 1a1 Teacher is prompted to re-enter valid credentials.                                           |
+|                           | 2a Authorization Server fails to verify teacher identity.                                        |
+|                           | 2a1 Teacher is redirected to the login page with an error message.                               |
+|                           | 5a Teacher encounters an error while managing course content.                                    |
+|                           | 5a1 Teacher is provided with an error message and guidance on how to proceed.                    |
+|                           | 6a Teacher encounters an issue with uploading grades.                                            |
+|                           | 6a1 Teacher is provided with an error message and guidance on how to resolve the issue.          |
+|                           | 7a Teacher faces difficulty scheduling classes.                                                  |
+|                           | 7a1 Teacher is provided with assistance and error resolution guidance.                           |
+|                           | 8a Teacher encounters issues while adding new users.                                             |
+|                           | 8a1 Admin is notified about the issue, and the teacher receives guidance.                        |
+|                           |                                                                                                  |
+
+</details>
+
+<details>
+    <summary> View Class </summary>
+
+| Description Item         | Description                                                                                 |
+|---------------------------|---------------------------------------------------------------------------------------------|
+| Use Case ID               | 7                                                                                           |
+| Use Case Description      | Student Accesses Post-Login Page with Hosted Materials                                      |
+| Corresponds to Need and Requirement | 4, 5, 6, 7                                                                                  |
+|                           |                                                                                             |
+| Actor                     | Student                                                                                     |
+| Stakeholders and Needs    | Student - To securely access course materials and grades after logging in.                  |
+|                           |                                                                                             |
+| Pre-conditions            | Student is authenticated and has a valid user session.                                      |
+| Trigger                   | Student successfully logs in.                                                               |
+| Post-conditions           | Student accesses the post-login page with hosted materials like recorded videos and grades. |
+|                           |                                                                                             |
+| Basic flow                | 1. Student logs into the platform using valid credentials.                                  |
+|                           | 2. Authorization Server verifies student identity.                                          |
+|                           | 3. If valid, Authorization Server issues an access token.                                   |
+|                           | 4. Student is redirected to the post-login page.                                            |
+|                           | 5. Resource Server provides access to hosted materials (recorded videos, documents, etc.).  |
+|                           | 6. Student views recorded videos, course documents, and checks grades.                      |
+|                           |                                                                                             |
+| Extensions                | 1a Student enters invalid credentials.                                                      |
+|                           | 1a1 Student is prompted to re-enter valid credentials.                                      |
+|                           | 2a Authorization Server fails to verify student identity.                                   |
+|                           | 2a1 Student is redirected to the login page with an error message.                          |
+|                           | 5a Resource Server fails to provide access to materials.                                    |
+|                           | 5a1 Student is informed about the failure to access materials.                              |
+|                           | 6a Student encounters an error while viewing materials or grades.                           |
+|                           | 6a1 Student is provided with an error message and guidance on how to proceed.               |
+|                           |                                                                                             |
+
+</details>
+
+<details>
   <summary> Enquiry | Visitor </summary>
 
 | Description Item         | Description                                                                             |
