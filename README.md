@@ -30,40 +30,78 @@ The product should be customizable depending on the services type. Depending on 
 ### Use Case Diagram
 ![Use Case](./docs/assets/use-case.png)
 
-### UML Class Diagram
-![UML Class](./docs/assets/uml-classes.png)
-
 ### Sequence diagram
 
+#### Invitation flow
+This flow is the starting point for most teachers. Admins would create invites for new teachers to sign up to the platform. They would also act as relationship managers to invitees that accept
+
 <details>
-  <summary> Authentication flow </summary>
-  
- #### Authentication flow  
-![UML Class](./docs/assets/seq-dia-auth.png)
+  <summary> Invitation Flow </summary>
+
+![UML Class](./docs/assets/images/Sequence%20_%20Invite%20_%20Admin.png)
+
+</details>
+
+#### Authentication flow
+This is the most common authentication flow for all user roles on the platform. Using OAuth2 as a authentication platform, we can make do without some of the usual login processes for expediency
+<details>
+  <summary> Authentication Flow </summary>
+
+![UML Class](./docs/assets/images/Sequence%20Diagram-Authentication%20Flow%20_%20User.png)
+
+</details>
+
+#### Teacher flow
+Teachers will be able to create their own public pages, add in relevant content. They will also be able to create private rooms that is linked to each public room. This would be the student pages that would host the learning content
+
+<details>
+  <summary> Sign up </summary>
+
+![Sign up | Teacher](./docs/assets/images/Sequence%20Diagram-Sign-up%20_%20Teacher.png)
 
 </details>
 
 <details>
-  <summary> Visitor Flow </summary>
-  
- #### Visitor flow  
-![UML Class](./docs/assets/seq-dia-visitor-flow.png)
+  <summary> Create Public Room Flow </summary>
+
+![Create Public Room | Teacher](./docs/assets/images/Sequence%20Diagram-Create%20Public%20Page%20_%20Teacher.png)
+
 
 </details>
 
 <details>
-  <summary> Student flow </summary>
-  
- #### Student flow  
-![UML Class](./docs/assets/seq-dia-student-flow.png)
+  <summary> Create Private Room Flow </summary>
+
+![Create Private Room | Teacher](./docs/assets/images/Sequence%20Diagram-Create%20Private%20Page%20_%20Teacher.png)
+
 
 </details>
 
 <details>
-  <summary> Teacher flow </summary>
-  
- #### Teacher flow  
-![UML Class](./docs/assets/seq-dia-teacher-flow.png)
+  <summary> Manage Private Room Flow </summary>
+
+![Manage Private Room | Teacher](./docs/assets/images/Sequence%20Diagram-Manage%20Class%20_%20Teacher.png)
 
 </details>
 
+#### Student flow
+Students will access private rooms with credentials provided by linked public room owners. There-fore each public room will have different login credentials.
+<details>
+  <summary> Student flow to view classes </summary>
+
+![View Class | Student](./docs/assets/images/Sequence%20Diagram-View%20Class%20_%20Student.png)
+
+</details>
+
+#### Visitor flow
+<details>
+  <summary> Enquiry flow for visitors </summary>
+  
+ 
+![Enquiry Flow | Visitor](./docs/assets/images/Sequence%20Diagram-Enquiry%20Flow%20_%20Visitor.png)
+
+</details>
+
+
+### UML Class Diagram
+![UML Class](./docs/assets/uml-classes.png)
