@@ -31,9 +31,8 @@ The product should be customizable depending on the services type. Depending on 
 ![Use Case](./docs/assets/images/Use%20Case.png)
 
 
-
 <details>
-  <summary> Create New Public Page </summary>
+  <summary> Create New Public Page | Teacher </summary>
 
 | Description Item         | Description                                              |
 |---------------------------|----------------------------------------------------------|
@@ -42,9 +41,11 @@ The product should be customizable depending on the services type. Depending on 
 | Actor                     | Teacher                                                  |
 | Stakeholders and Needs    | Teacher - to have a digital public space that can be used to advertise services offered |
 |                           | Visitor - to discover new teaching services               |
+|                           |               |
 | Pre-conditions            | User with "Teacher" role has accessed the platform        |
 | Trigger                   | Teacher clicks on create new public page                 |
 | Post-conditions           | Teacher should have an SEO optimized public page offering teaching services in the local area |
+|            |  |
 | Basic flow                | 1. Teacher enters the name of the service                 |
 |                           | 2. Teacher enters services being offered                  |
 |                           | 3. Teacher enters the area of service offering           |
@@ -55,6 +56,7 @@ The product should be customizable depending on the services type. Depending on 
 |                           | 8. Teacher selects the payment plan                        |
 |                           | 9. Teacher pays the payment plan                           |
 |                           | 10. Page is publicly available                             |
+|                           |                                                          |
 | Extensions                |                                                          |
 |                           |                                                          |
 |                           |                                                          |
@@ -68,6 +70,45 @@ The product should be customizable depending on the services type. Depending on 
 |                           |                                                          |
 |                           |                                                          |
 
+</details>
+
+
+<details>
+  <summary> Enquiry | Visitor </summary>
+
+| Description Item         | Description                                              |
+|---------------------------|----------------------------------------------------------|
+| Use Case ID               | 2                                                        |
+| Use Case Description      | Visitor Makes an enquiry about a class or school on a public page |
+|                           |                                                          |
+| Actor                     | Visitor                                                  |
+| Stakeholders and Needs    | Teacher - To clarify questions from interested parties about the services being offered |
+|                           | School admin - to clarify questions from interested parties about school services |
+|                           |                                                          |
+| Pre-conditions            | Visitor has accessed the public page of a teacher or school |
+| Trigger                   | Visitor has submitted an enquiry form from a public page  |
+| Post-conditions           | Enquiry is logged, and public page owners are notified about visitor enquiry |
+|                           |                                                          |
+| Basic flow                | 1. Visitor accesses the enquiry form                       |
+|                           | 2. Visitor fills in form details                           |
+|                           | 3. Visitor submits the form                                |
+|                           | 4. System logs form details                                |
+|                           | 5. Public page owner is notified about the message         |
+|                           | 6. Visitor is given a success message, and the form is removed from the screen |
+|                           |                                                          |
+| Extensions                | 1a Public page load fails                                  |
+|                           | 1a1 Visitor is shown an error page                         |
+|                           | 2a Form has invalid details                                |
+|                           | 2a1 Visitor is shown error messages on form elements      |
+|                           | 2a2 Visitor is prompted to correct form details            |
+|                           |                                                          |
+|                           | 3a Visitor attempted to submit an incomplete form          |
+|                           | 3a1 Submit button is not active                            |
+|                           | 3a2 Visitor is shown which form fields are required        |
+|                           |                                                          |
+|                           | 6a Form is valid but submission fails                       |
+|                           | 6a1 Enquiry form submission error is returned to Visitor   |
+|                           | 6a2 Visitor is shown an appropriate error                  |
 
 </details>
 
