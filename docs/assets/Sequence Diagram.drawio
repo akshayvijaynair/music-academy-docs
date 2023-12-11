@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-11T19:39:40.828Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="eDkibvFsgs4ULnAEnwwI" version="22.1.7" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2023-12-11T19:56:10.237Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="Dx8uGInfSrEK9h97vL0d" version="22.1.7" type="github" pages="8">
   <diagram id="pcpHLUfTabcnnuUyL6Mx" name="Invite | Admin">
     <mxGraphModel dx="1446" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1823,7 +1823,7 @@
             <mxPoint x="1461.5" y="1608" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tMQf0idSr4rJpOSp5qSa-70" value="show public page" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+        <mxCell id="tMQf0idSr4rJpOSp5qSa-70" value="show private page" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
           <mxGeometry x="0.9027" relative="1" as="geometry">
             <mxPoint x="1461" y="1648" as="sourcePoint" />
             <mxPoint x="50.5" y="1648" as="targetPoint" />
