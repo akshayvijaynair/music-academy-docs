@@ -350,7 +350,7 @@ The product should be customizable depending on the services type. Depending on 
 ## Software Design Document | Sequence diagram
 
 ### Invitation flow
-    This flow is the starting point for most teachers. Admins would create invites for new teachers to sign up to the platform. They would also act as relationship managers to invitees that accept
+This flow is the starting point for most teachers. Admins would create invites for new teachers to sign up to the platform. They would also act as relationship managers to invitees that accept
 
 <details>
   <summary> Invitation Flow </summary>
@@ -360,7 +360,7 @@ The product should be customizable depending on the services type. Depending on 
 </details>
 
 ### Authentication flow
-    This is the most common authentication flow for all user roles on the platform. Using OAuth2 as a authentication platform, we can make do without some of the usual login processes for expediency
+This is the most common authentication flow for all user roles on the platform. Using OAuth2 as a authentication platform, we can make do without some of the usual login processes for expediency
 <details>
   <summary> Authentication Flow </summary>
 
@@ -369,7 +369,7 @@ The product should be customizable depending on the services type. Depending on 
 </details>
 
 ### Teacher flow
-    Teachers will be able to create their own public pages, add in relevant content. They will also be able to create private rooms that is linked to each public room. This would be the student pages that would host the learning content
+Teachers will be able to create their own public pages, add in relevant content. They will also be able to create private rooms that is linked to each public room. This would be the student pages that would host the learning content
 
 <details>
   <summary> Sign up </summary>
@@ -402,7 +402,7 @@ The product should be customizable depending on the services type. Depending on 
 </details>
 
 ### Student flow
-    Students will access private rooms with credentials provided by linked public room owners. There-fore each public room will have different login credentials.
+Students will access private rooms with credentials provided by linked public room owners. There-fore each public room will have different login credentials.
 <details>
   <summary> Student flow to view classes </summary>
 
@@ -411,7 +411,6 @@ The product should be customizable depending on the services type. Depending on 
 </details>
 
 ### Visitor flow
-    Visitors to public pages who discover new teaching services should be able to enquire with the teacher in a standard format
 <details>
   <summary> Enquiry flow for visitors </summary>
   
