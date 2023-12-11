@@ -112,85 +112,237 @@ The product should be customizable depending on the services type. Depending on 
 ## Software Design Document | Use Case Diagram
 ![Use Case](./docs/assets/images/Use%20Case.png)
 
-
-<details>
-  <summary> Create New Public Page | Teacher </summary>
+<details> 
+    <summary> Invite new Users </summary>
 
 | Description Item         | Description                                              |
 |---------------------------|----------------------------------------------------------|
-| Use Case ID               | 1                                                        |
-| Use Case Description      | Also known as a public page - This is the landing page for all teachers offering their services |
-| Actor                     | Teacher                                                  |
-| Stakeholders and Needs    | Teacher - to have a digital public space that can be used to advertise services offered |
-|                           | Visitor - to discover new teaching services               |
-|                           |               |
-| Pre-conditions            | User with "Teacher" role has accessed the platform        |
-| Trigger                   | Teacher clicks on create new public page                 |
-| Post-conditions           | Teacher should have an SEO optimized public page offering teaching services in the local area |
-|            |  |
-| Basic flow                | 1. Teacher enters the name of the service                 |
-|                           | 2. Teacher enters services being offered                  |
-|                           | 3. Teacher enters the area of service offering           |
-|                           | 4. Teacher enters prices of services being offered       |
-|                           | 5. Teacher selects the color theme of the public page     |
-|                           | 6. System generates a preview of the public page          |
-|                           | 7. Teacher accepts the preview                            |
-|                           | 8. Teacher selects the payment plan                        |
-|                           | 9. Teacher pays the payment plan                           |
-|                           | 10. Page is publicly available                             |
+| Use Case ID               |                                                          |
+| Use Case Description      | Admin Sends Email Invite to Join Platform                 |
+| Corresponds to Need and Requirement     | 1, 2, 4, 10                                                                                                  |
 |                           |                                                          |
-| Extensions                |                                                          |
+| Actor                     | Admin                                                    |
+| Stakeholders and Needs    | Admin - To send email invites to potential users.        |
 |                           |                                                          |
+| Pre-conditions            | Admin is authenticated and has the necessary privileges. |
+| Trigger                   | Admin initiates the process to send email invites.       |
+| Post-conditions           | Email invites are sent to the specified users.           |
 |                           |                                                          |
+| Basic flow                | 1. Admin logs into the admin portal.                     |
+|                           | 2. Admin navigates to the user invitation section.      |
+|                           | 3. Admin enters the email addresses of users to invite.  |
+|                           | 4. Admin includes a personalized message in the invitation. |
+|                           | 5. Admin submits the invitation form.                    |
+|                           | 6. Authorization Server generates unique invitation tokens. |
+|                           | 7. Email Service sends email invites to the specified users. |
 |                           |                                                          |
-|                           |                                                          |
-|                           |                                                          |
-|                           |                                                          |
-|                           |                                                          |
-|                           |                                                          |
-|                           |                                                          |
-|                           |                                                          |
+| Extensions                | 2a Admin navigates to the wrong section.                 |
+|                           | 2a1 Admin is redirected to the correct invitation section. |
+|                           | 3a Admin enters an invalid email address.                |
+|                           | 3a1 Admin is prompted to correct the email address.     |
+|                           | 6a Authorization Server fails to generate invitation tokens. |
+|                           | 6a1 Admin is informed about the failure to send invitations. |
+|                           | 7a Email Service fails to send email invites.           |
+|                           | 7a1 Admin is informed about the failure to deliver invites. |
 |                           |                                                          |
 
 </details>
 
+<details>
+    <summary> Sign up for new Teachers </summary>
+
+| Description Item         | Description                                                                                                  |
+|---------------------------|--------------------------------------------------------------------------------------------------------------|
+| Use Case ID               |                                                                                                              |
+| Use Case Description      | OAuth2 User Signup with Email Invite and Profile Setup                                                       |
+| Corresponds to Need and Requirement     | 1, 2, 4, 10                                                                                                  |
+|                           |                                                                                                              |
+| Actor                     | User                                                                                                         |
+| Stakeholders and Needs    | User - To securely sign up using an email invite and complete their profile.                                 |
+|                           | Admin - To be notified of new user signups.                                                                  |
+|                           |                                                                                                              |
+| Pre-conditions            | User has received a valid email invite.                                                                      |
+| Trigger                   | User clicks on the signup link in the email invite.                                                          |
+| Post-conditions           | User successfully signs up, completes the profile, gets redirected to the welcome page, and Admin is notified. |
+|                           |                                                                                                              |
+| Basic flow                | 1. User clicks on the signup link in the email invite.                                                       |
+|                           | 2. User is redirected to the Signup Page.                                                                    |
+|                           | 3. User enters required information (e.g., name, email, password).                                           |
+|                           | 4. User submits the signup form.                                                                             |
+|                           | 5. Authorization Server validates user credentials.                                                          |
+|                           | 6. If valid, Authorization Server issues an access token.                                                    |
+|                           | 7. User is redirected to the Profile Setup Page.                                                             |
+|                           | 8. User completes additional profile details.                                                                |
+|                           | 9. User submits the profile form.                                                                            |
+|                           | 10. Resource Server stores the user's profile information.                                                   |
+|                           | 11. User is redirected to the Welcome Page.                                                                  |
+|                           | 12. Admin is notified of the new signup.                                                                     |
+|                           |                                                                                                              |
+| Extensions                | 3a User abandons the signup process.                                                                         |
+|                           | 3a1 User is redirected to the homepage or login page.                                                        |
+|                           | 5a User provides invalid or incomplete information.                                                          |
+|                           | 5a1 User is prompted to correct the information.                                                             |
+|                           | 9a User abandons the profile setup.                                                                          |
+|                           | 9a1 User is redirected to the homepage or login page.                                                        |
+|                           | 11a Notification to Admin fails.                                                                             |
+|                           | 11a1 Admin is informed about the failure to notify.                                                          |
+|                           |                                                                                                              |
+
+</details>
+
+<details>
+    <summary> Authentication </summary>
+
+| Description Item         | Description                                                                               |
+|---------------------------|-------------------------------------------------------------------------------------------|
+| Use Case ID               | 2                                                                                         |
+| Use Case Description      | OAuth2 Authentication Flow                                                                |
+| Corresponds to Need and Requirement | 4                                                                                         |
+|                           |                                                                                           |
+| Actor                     | User                                                                                      |
+| Stakeholders and Needs    | User - To securely authenticate and access resources.                                     |
+|                           |                                                                                           |
+| Pre-conditions            | User has an account with the Authorization Server.                                        |
+| Trigger                   | User initiates the authentication process with the Client Application.                    |
+| Post-conditions           | User is successfully authenticated and receives an access token.                          |
+|                           |                                                                                           |
+| Basic flow                | 1. User initiates authentication through the Client Application.                          |
+|                           | 2. Client Application redirects the user to the Authorization Server.                     |
+|                           | 3. User authenticates with the Authorization Server.                                      |
+|                           | 4. Authorization Server validates user credentials.                                       |
+|                           | 5. If valid, Authorization Server issues an authorization code to the Client Application. |
+|                           | 6. Client Application exchanges the authorization code for an access token.               |
+|                           | 7. User receives the access token.                                                        |
+|                           |                                                                                           |
+| Extensions                | 3a User denies authentication request.                                                    |
+|                           | 3a1 Authorization Server redirects user back to the Client Application with an error.     |
+|                           | 4a User credentials are invalid.                                                          |
+|                           | 4a1 Authorization Server informs the Client Application of the authentication failure.    |
+|                           | 6a Authorization code exchange fails.                                                     |
+|                           | 6a1 Client Application receives an error response from the Authorization Server.          |
+|                           | 6a2 User is informed about the failure to authenticate.                                   |
+|                           |                                                                                           |
+
+
+</details>
+
+<details>
+  <summary> Create New Public Page | Teacher </summary>
+
+| Description Item                    | Description                                                                                     |
+|-------------------------------------|-------------------------------------------------------------------------------------------------|
+| Use Case ID                         | 4                                                                                               |
+| Use Case Description                | Also known as a public page - This is the landing page for all teachers offering their services |
+| Corresponds to Need and Requirement | 1, 3, 10                                                                                        |
+|                                     |                                                                                                 |
+| Actor                               | Teacher                                                                                         |
+| Stakeholders and Needs              | Teacher - to have a digital public space that can be used to advertise services offered         |
+|                                     | Visitor - to discover new teaching services                                                     |
+|                                     |                                                                                                 |
+| Pre-conditions                      | User with "Teacher" role has accessed the platform  dashboard                                   |
+| Trigger                             | Teacher clicks on create new public page                                                        |
+| Post-conditions                     | Teacher should have an SEO optimized public page offering teaching services in the local area   |
+|                                     |                                                                                                 |
+| Basic flow                          | 1. Teacher enters the name of the service                                                       |
+|                                     | 2. Teacher enters services being offered                                                        |
+|                                     | 3. Teacher enters the area of service offering                                                  |
+|                                     | 4. Teacher enters prices of services being offered                                              |
+|                                     | 5. Teacher selects the color theme of the public page                                           |
+|                                     | 6. System generates a preview of the public page                                                |
+|                                     | 7. Teacher accepts the preview                                                                  |
+|                                     | 8. Teacher selects the payment plan                                                             |
+|                                     | 9. Teacher pays the payment plan                                                                |
+|                                     | 10. Page is publicly available                                                                  |
+|                                     |                                                                                                 |
+| Extensions                          | 1a Preview generation fails                                                                     |
+|                                     | 1a1 Teacher is notified about the failure and prompted to retry                                 |
+|                                     | 2a Invalid input for services being offered                                                     |
+|                                     | 2a1 Teacher is shown error messages on the input fields                                         |
+|                                     | 2a2 Teacher is prompted to correct the service details                                          |
+|                                     | 6a Payment fails                                                                                |
+|                                     | 6a1 Teacher receives a notification about the payment failure                                   |
+|                                     | 6a2 Teacher is prompted to choose an alternative payment method                                 |
+|                                     |                                                                                                 |
+
+</details>
+
+<details>
+  <summary> Create New Private Page | Teacher </summary>
+
+| Description Item         | Description                                                                                                 |
+|---------------------------|-------------------------------------------------------------------------------------------------------------|
+| Use Case ID               | 5                                                                                                           |
+| Use Case Description      | Also known as a private page - This is the class service that the teacher is offering to signed up students |
+| Corresponds to Need and Requirement | 4, 5, 6, 9, 10, 11, 12, 13, 14, 15, 16                                                                      |
+|                           |                                                                                                             |
+| Actor                     | Teacher                                                                                                     |
+| Stakeholders and Needs    | Teacher - to have a digital public space that can be used to advertise services offered                     |
+|                           | Visitor - to discover new teaching services                                                                 |
+|                           |                                                                                                             |
+| Pre-conditions            | User with "Teacher" role has accessed the platform dashboard                                                |
+| Trigger                   | Teacher clicks on create new private page                                                                   |
+| Post-conditions           | Teacher should have an SEO optimized public page offering teaching services in the local area               |
+|                           |                                                                                                             |
+| Basic flow                | 1. Teacher enters the name of the service                                                                   |
+|                           | 2. Teacher enters services being offered                                                                    |
+|                           | 3. Teacher enters the area of service offering                                                              |
+|                           | 4. Teacher uploads starter content of page                                                                  |
+|                           | 5. Teacher selects the themes of the private page                                                           |
+|                           | 6. System generates a preview of the private page                                                           |
+|                           | 7. Teacher accepts the preview                                                                              |
+|                           | 8. Teacher selects the payment plan                                                                         |
+|                           | 9. Teacher pays the payment plan                                                                            |
+|                           | 10. Page is published                                                                                       |
+|                           |                                                                                                             |
+| Extensions                | 1a Preview generation fails                                                                                 |
+|                           | 1a1 Teacher is notified about the failure and prompted to retry                                             |
+|                           | 2a Invalid input for services being offered                                                                 |
+|                           | 2a1 Teacher is shown error messages on the input fields                                                     |
+|                           | 2a2 Teacher is prompted to correct the service details                                                      |
+|                           | 6a Payment fails                                                                                            |
+|                           | 6a1 Teacher receives a notification about the payment failure                                               |
+|                           | 6a2 Teacher is prompted to choose an alternative payment method                                             |
+|                           |                                                                                                             |
+
+</details>
 
 <details>
   <summary> Enquiry | Visitor </summary>
 
-| Description Item         | Description                                              |
-|---------------------------|----------------------------------------------------------|
-| Use Case ID               | 2                                                        |
-| Use Case Description      | Visitor Makes an enquiry about a class or school on a public page |
-|                           |                                                          |
-| Actor                     | Visitor                                                  |
+| Description Item         | Description                                                                             |
+|---------------------------|-----------------------------------------------------------------------------------------|
+| Use Case ID               | 2                                                                                       |
+| Use Case Description      | Visitor Makes an enquiry about a class or school on a public page                       |
+| Corresponds to Need and Requirement | 2, 3, 13, 10                                                                            |
+|                           |                                                                                         |
+| Actor                     | Visitor                                                                                 |
 | Stakeholders and Needs    | Teacher - To clarify questions from interested parties about the services being offered |
-|                           | School admin - to clarify questions from interested parties about school services |
-|                           |                                                          |
-| Pre-conditions            | Visitor has accessed the public page of a teacher or school |
-| Trigger                   | Visitor has submitted an enquiry form from a public page  |
-| Post-conditions           | Enquiry is logged, and public page owners are notified about visitor enquiry |
-|                           |                                                          |
-| Basic flow                | 1. Visitor accesses the enquiry form                       |
-|                           | 2. Visitor fills in form details                           |
-|                           | 3. Visitor submits the form                                |
-|                           | 4. System logs form details                                |
-|                           | 5. Public page owner is notified about the message         |
-|                           | 6. Visitor is given a success message, and the form is removed from the screen |
-|                           |                                                          |
-| Extensions                | 1a Public page load fails                                  |
-|                           | 1a1 Visitor is shown an error page                         |
-|                           | 2a Form has invalid details                                |
-|                           | 2a1 Visitor is shown error messages on form elements      |
-|                           | 2a2 Visitor is prompted to correct form details            |
-|                           |                                                          |
-|                           | 3a Visitor attempted to submit an incomplete form          |
-|                           | 3a1 Submit button is not active                            |
-|                           | 3a2 Visitor is shown which form fields are required        |
-|                           |                                                          |
-|                           | 6a Form is valid but submission fails                       |
-|                           | 6a1 Enquiry form submission error is returned to Visitor   |
-|                           | 6a2 Visitor is shown an appropriate error                  |
+|                           | School admin - to clarify questions from interested parties about school services       |
+|                           |                                                                                         |
+| Pre-conditions            | Visitor has accessed the public page of a teacher or school                             |
+| Trigger                   | Visitor has submitted an enquiry form from a public page                                |
+| Post-conditions           | Enquiry is logged, and public page owners are notified about visitor enquiry            |
+|                           |                                                                                         |
+| Basic flow                | 1. Visitor accesses the enquiry form                                                    |
+|                           | 2. Visitor fills in form details                                                        |
+|                           | 3. Visitor submits the form                                                             |
+|                           | 4. System logs form details                                                             |
+|                           | 5. Public page owner is notified about the message                                      |
+|                           | 6. Visitor is given a success message, and the form is removed from the screen          |
+|                           |                                                                                         |
+| Extensions                | 1a Public page load fails                                                               |
+|                           | 1a1 Visitor is shown an error page                                                      |
+|                           | 2a Form has invalid details                                                             |
+|                           | 2a1 Visitor is shown error messages on form elements                                    |
+|                           | 2a2 Visitor is prompted to correct form details                                         |
+|                           |                                                                                         |
+|                           | 3a Visitor attempted to submit an incomplete form                                       |
+|                           | 3a1 Submit button is not active                                                         |
+|                           | 3a2 Visitor is shown which form fields are required                                     |
+|                           |                                                                                         |
+|                           | 6a Form is valid but submission fails                                                   |
+|                           | 6a1 Enquiry form submission error is returned to Visitor                                |
+|                           | 6a2 Visitor is shown an appropriate error                                               |
 
 </details>
 
