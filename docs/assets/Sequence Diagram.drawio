@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-11T17:00:04.553Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="AnKcIQYCeShFwfuPlH_K" version="22.1.7" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-12-11T17:01:13.118Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="C0a1q0uz5_YYaLHoYwEc" version="22.1.7" type="github" pages="6">
   <diagram name="Authentication Flow | User" id="2YBvvXClWsGukQMizWep">
     <mxGraphModel dx="1301" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1404,7 +1404,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="pcpHLUfTabcnnuUyL6Mx" name="Page-6">
+  <diagram id="pcpHLUfTabcnnuUyL6Mx" name="Invite | Admin">
     <mxGraphModel dx="964" dy="430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -1434,7 +1434,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="G8iRJTEPkxSwJO_G3CvX-54" value="&lt;h1&gt;Sign-up | Student&lt;/h1&gt;&lt;div&gt;Flow for logged-in students&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="G8iRJTEPkxSwJO_G3CvX-54" value="&lt;h1&gt;Invite Teacher | Admin&lt;/h1&gt;&lt;div&gt;Flow for admins to invite teachers to platform&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="120" y="30" width="690" height="70" as="geometry" />
         </mxCell>
         <mxCell id="G8iRJTEPkxSwJO_G3CvX-55" value="Logging Service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
