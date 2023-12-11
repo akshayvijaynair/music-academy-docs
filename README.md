@@ -1,5 +1,5 @@
 # Digital Tutoring Platform as a Service
-<p style="text-align: center;">SE 673 | Project Documentation for a Digital Tutoring Platform as a service</p>
+    SE 673 | Project Documentation for a Digital Tutoring Platform as a service
 
 ## Project Description
  
@@ -15,16 +15,98 @@ The generic product aims to help freelance teachers and students by providing th
  
 The product should be customizable depending on the services type. Depending on the affiliation, curriculum-based lessons plans should be pre-populated. More broadly, the product should have the ability to group teachers together to create institutions.
  
-## Features:
+## Features
 
 1.	Public site for advertising services.
+<details>
+  <summary> Needs Elicitation </summary>
+
+| #   | Need                                           |
+| --- | ---------------------------------------------- |
+| 1   | A user-friendly interface for teacher profiles.|
+| 2   | Customization options for teacher profiles.    |
+| 3   | Ability to display services offered by teachers.|
+
+</details>
+
 2.	Student portal to view lessons, access learning material, scheduling, and history.
+<details>
+  <summary>Needs Elicitation </summary>
+
+| #   | Need                                           |
+| --- | ---------------------------------------------- |
+| 1   | Secure user accounts for students.             |
+| 2   | Access to lesson summaries and schedules.      |
+| 3   | Repository for learning materials.             |
+
+</details>
+
 3.	Social space to interact with other students - This would have custom features to upload work/performances/ session.
+<details>
+  <summary> Needs Elicitation </summary>
+
+| #   | Need                                           |
+| --- | ---------------------------------------------- |
+| 1   | Social space with user profiles for students. |
+| 2   | Ability to upload and share work/performances. |
+| 3   | Custom features for interactive sessions.     |
+
+</details>
+
 4.	Ability for teachers to upload content tailored to each student, moderate content, grade performances.
+<details>
+  <summary> Needs Elicitation </summary>
+
+| #   | Need                                           |
+| --- | ---------------------------------------------- |
+| 1   | Customizable content upload for teachers.     |
+| 2   | Content moderation tools.                     |
+| 3   | Grading system for student performances.       |
+
+</details>
+
 5.	Ability for teachers to broadcast internal messages, livestream classes.
+<details>
+  <summary> Needs Elicitation </summary>
+
+| #   | Need                                           |
+| --- | ---------------------------------------------- |
+| 1   | Internal messaging system for teachers.        |
+| 2   | Livestreaming capability for classes.          |
+
+</details>
+
 6.	Ability to group teachers together to create larger institutions.
+<details>
+  <summary> Needs Elicitation </summary>
 
+| #   | Need                                           |
+| --- | ---------------------------------------------- |
+| 1   | Grouping feature for creating institutions.   |
+| 2   | Administrative controls for grouped teachers. |
 
+</details>
+
+## Needs and Requirements
+
+| #   | Need                                           | Requirement                                   |
+| --- | ---------------------------------------------- | ---------------------------------------------- |
+| 1   | A user-friendly interface for teacher profiles.| Teachers can create and edit their profiles.  |
+| 2   | Customization options for teacher profiles.    | Support for multimedia content in profiles.   |
+| 3   | Ability to display services offered by teachers.| Search functionality for students to find teachers.|
+| 4   | Secure user accounts for students.             | Student registration and account management.  |
+| 5   | Access to lesson summaries and schedules.      | User-friendly dashboard for students.         |
+| 6   | Repository for learning materials.             | Integration with scheduling tools.             |
+| 7   | Social space with user profiles for students.  | Student profile creation for social space.    |
+| 8   | Ability to upload and share work/performances. | File upload and sharing functionality.       |
+| 9   | Custom features for interactive sessions.     | Interactive features for real-time sessions. |
+| 10  | Customizable content upload for teachers.     | Teacher-specific content management system.   |
+| 11  | Content moderation tools.                     | Moderation tools for uploaded content.        |
+| 12  | Grading system for student performances.       | Grading interface for student performances.   |
+| 13  | Internal messaging system for teachers.        | Secure internal messaging system.             |
+| 14  | Livestreaming capability for classes.          | Integration with livestreaming platforms.    |
+| 15  | Grouping feature for creating institutions.   | Group creation and management functionality. |
+| 16  | Administrative controls for grouped teachers. | Access controls and administrative roles.    |
 
 
 ## Software Design Document | Use Case Diagram
