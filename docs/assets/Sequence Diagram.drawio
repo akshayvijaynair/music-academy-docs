@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-11T00:51:28.773Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="3X4XmssnO44bMBCFpXIJ" version="22.1.7" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-12-11T00:53:26.829Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="-5758WY36MyeEGbF1ibg" version="22.1.7" type="github" pages="5">
   <diagram name="Authentication Flow | User" id="2YBvvXClWsGukQMizWep">
     <mxGraphModel dx="1290" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -455,7 +455,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="POtnxiZByTWqctaH7iP5" name="Create Public Page | Teacher">
-    <mxGraphModel dx="2867" dy="1291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1720" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -853,7 +853,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="VUZMUBTK1dd9Gy3hTVeW-8" value="Alt preview" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
-          <mxGeometry x="20" y="653" width="1640" height="238" as="geometry" />
+          <mxGeometry x="20" y="653" width="700" height="238" as="geometry" />
         </mxCell>
         <mxCell id="VUZMUBTK1dd9Gy3hTVeW-12" value="make changes" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" edge="1" parent="1">
           <mxGeometry x="0.6818" width="60" relative="1" as="geometry">
