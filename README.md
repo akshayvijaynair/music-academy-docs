@@ -115,78 +115,36 @@ The product should be customizable depending on the services type. Depending on 
 <details> 
     <summary> Invite new Users </summary>
 
-| Description Item         | Description                                              |
-|---------------------------|----------------------------------------------------------|
-| Use Case ID               |                                                          |
-| Use Case Description      | Admin Sends Email Invite to Join Platform                 |
-| Corresponds to Need and Requirement     | 1, 2, 4, 10                                                                                                  |
-|                           |                                                          |
-| Actor                     | Admin                                                    |
-| Stakeholders and Needs    | Admin - To send email invites to potential users.        |
-|                           |                                                          |
-| Pre-conditions            | Admin is authenticated and has the necessary privileges. |
-| Trigger                   | Admin initiates the process to send email invites.       |
-| Post-conditions           | Email invites are sent to the specified users.           |
-|                           |                                                          |
-| Basic flow                | 1. Admin logs into the admin portal.                     |
-|                           | 2. Admin navigates to the user invitation section.      |
-|                           | 3. Admin enters the email addresses of users to invite.  |
-|                           | 4. Admin includes a personalized message in the invitation. |
-|                           | 5. Admin submits the invitation form.                    |
-|                           | 6. Authorization Server generates unique invitation tokens. |
+| Description Item         | Description                                                  |
+|---------------------------|--------------------------------------------------------------|
+| Use Case ID               | 1                                                            |
+| Use Case Description      | Admin Sends Email Invite to Join Platform                    |
+| Corresponds to Need and Requirement     | 1, 2, 4, 10                                                  |
+|                           |                                                              |
+| Actor                     | Admin                                                        |
+| Stakeholders and Needs    | Admin - To send email invites to potential users.            |
+|                           |                                                              |
+| Pre-conditions            | Admin is authenticated and has the necessary privileges.     |
+| Trigger                   | Admin initiates the process to send email invites.           |
+| Post-conditions           | Email invites are sent to the specified users.               |
+|                           |                                                              |
+| Basic flow                | 1. Admin logs into the admin portal.                         |
+|                           | 2. Admin navigates to the user invitation section.           |
+|                           | 3. Admin enters the email addresses of users to invite.      |
+|                           | 4. Admin includes a personalized message in the invitation.  |
+|                           | 5. Admin submits the invitation form.                        |
+|                           | 6. Authorization Server generates unique invitation tokens.  |
 |                           | 7. Email Service sends email invites to the specified users. |
-|                           |                                                          |
-| Extensions                | 2a Admin navigates to the wrong section.                 |
-|                           | 2a1 Admin is redirected to the correct invitation section. |
-|                           | 3a Admin enters an invalid email address.                |
-|                           | 3a1 Admin is prompted to correct the email address.     |
+|                           |                                                              |
+| Extensions                | 2a Admin navigates to the wrong section.                     |
+|                           | 2a1 Admin is redirected to the correct invitation section.   |
+|                           | 3a Admin enters an invalid email address.                    |
+|                           | 3a1 Admin is prompted to correct the email address.          |
 |                           | 6a Authorization Server fails to generate invitation tokens. |
 |                           | 6a1 Admin is informed about the failure to send invitations. |
-|                           | 7a Email Service fails to send email invites.           |
-|                           | 7a1 Admin is informed about the failure to deliver invites. |
-|                           |                                                          |
-
-</details>
-
-<details>
-    <summary> Sign up for new Teachers </summary>
-
-| Description Item         | Description                                                                                                  |
-|---------------------------|--------------------------------------------------------------------------------------------------------------|
-| Use Case ID               |                                                                                                              |
-| Use Case Description      | OAuth2 User Signup with Email Invite and Profile Setup                                                       |
-| Corresponds to Need and Requirement     | 1, 2, 4, 10                                                                                                  |
-|                           |                                                                                                              |
-| Actor                     | User                                                                                                         |
-| Stakeholders and Needs    | User - To securely sign up using an email invite and complete their profile.                                 |
-|                           | Admin - To be notified of new user signups.                                                                  |
-|                           |                                                                                                              |
-| Pre-conditions            | User has received a valid email invite.                                                                      |
-| Trigger                   | User clicks on the signup link in the email invite.                                                          |
-| Post-conditions           | User successfully signs up, completes the profile, gets redirected to the welcome page, and Admin is notified. |
-|                           |                                                                                                              |
-| Basic flow                | 1. User clicks on the signup link in the email invite.                                                       |
-|                           | 2. User is redirected to the Signup Page.                                                                    |
-|                           | 3. User enters required information (e.g., name, email, password).                                           |
-|                           | 4. User submits the signup form.                                                                             |
-|                           | 5. Authorization Server validates user credentials.                                                          |
-|                           | 6. If valid, Authorization Server issues an access token.                                                    |
-|                           | 7. User is redirected to the Profile Setup Page.                                                             |
-|                           | 8. User completes additional profile details.                                                                |
-|                           | 9. User submits the profile form.                                                                            |
-|                           | 10. Resource Server stores the user's profile information.                                                   |
-|                           | 11. User is redirected to the Welcome Page.                                                                  |
-|                           | 12. Admin is notified of the new signup.                                                                     |
-|                           |                                                                                                              |
-| Extensions                | 3a User abandons the signup process.                                                                         |
-|                           | 3a1 User is redirected to the homepage or login page.                                                        |
-|                           | 5a User provides invalid or incomplete information.                                                          |
-|                           | 5a1 User is prompted to correct the information.                                                             |
-|                           | 9a User abandons the profile setup.                                                                          |
-|                           | 9a1 User is redirected to the homepage or login page.                                                        |
-|                           | 11a Notification to Admin fails.                                                                             |
-|                           | 11a1 Admin is informed about the failure to notify.                                                          |
-|                           |                                                                                                              |
+|                           | 7a Email Service fails to send email invites.                |
+|                           | 7a1 Admin is informed about the failure to deliver invites.  |
+|                           |                                                              |
 
 </details>
 
@@ -223,6 +181,48 @@ The product should be customizable depending on the services type. Depending on 
 |                           | 6a2 User is informed about the failure to authenticate.                                   |
 |                           |                                                                                           |
 
+
+</details>
+
+<details>
+    <summary> Sign up for new Teachers </summary>
+
+| Description Item         | Description                                                                                                    |
+|---------------------------|----------------------------------------------------------------------------------------------------------------|
+| Use Case ID               | 3                                                                                                              |
+| Use Case Description      | OAuth2 User Signup with Email Invite and Profile Setup                                                         |
+| Corresponds to Need and Requirement     | 1, 2, 4, 10                                                                                                    |
+|                           |                                                                                                                |
+| Actor                     | User                                                                                                           |
+| Stakeholders and Needs    | User - To securely sign up using an email invite and complete their profile.                                   |
+|                           | Admin - To be notified of new user signups.                                                                    |
+|                           |                                                                                                                |
+| Pre-conditions            | User has received a valid email invite.                                                                        |
+| Trigger                   | User clicks on the signup link in the email invite.                                                            |
+| Post-conditions           | User successfully signs up, completes the profile, gets redirected to the welcome page, and Admin is notified. |
+|                           |                                                                                                                |
+| Basic flow                | 1. User clicks on the signup link in the email invite.                                                         |
+|                           | 2. User is redirected to the Signup Page.                                                                      |
+|                           | 3. User enters required information (e.g., name, email, password).                                             |
+|                           | 4. User submits the signup form.                                                                               |
+|                           | 5. Authorization Server validates user credentials.                                                            |
+|                           | 6. If valid, Authorization Server issues an access token.                                                      |
+|                           | 7. User is redirected to the Profile Setup Page.                                                               |
+|                           | 8. User completes additional profile details.                                                                  |
+|                           | 9. User submits the profile form.                                                                              |
+|                           | 10. Resource Server stores the user's profile information.                                                     |
+|                           | 11. User is redirected to the Welcome Page.                                                                    |
+|                           | 12. Admin is notified of the new signup.                                                                       |
+|                           |                                                                                                                |
+| Extensions                | 3a User abandons the signup process.                                                                           |
+|                           | 3a1 User is redirected to the homepage or login page.                                                          |
+|                           | 5a User provides invalid or incomplete information.                                                            |
+|                           | 5a1 User is prompted to correct the information.                                                               |
+|                           | 9a User abandons the profile setup.                                                                            |
+|                           | 9a1 User is redirected to the homepage or login page.                                                          |
+|                           | 11a Notification to Admin fails.                                                                               |
+|                           | 11a1 Admin is informed about the failure to notify.                                                            |
+|                           |                                                                                                                |
 
 </details>
 
@@ -311,7 +311,7 @@ The product should be customizable depending on the services type. Depending on 
 
 | Description Item         | Description                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------|
-| Use Case ID               | 2                                                                                       |
+| Use Case ID               | 8                                                                                       |
 | Use Case Description      | Visitor Makes an enquiry about a class or school on a public page                       |
 | Corresponds to Need and Requirement | 2, 3, 13, 10                                                                            |
 |                           |                                                                                         |
