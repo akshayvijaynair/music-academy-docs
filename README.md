@@ -1,6 +1,28 @@
 # Digital Tutoring Platform as a Service
     SE 673 | Project Documentation for a Digital Tutoring Platform as a service
 
+## Table of Contents
+1. [Project Description](#project-description)
+2. [Features](#features)
+3. [Needs and Requirements](#needs-and-requirements)
+4. [Software Design Document | Use Case Diagram](#software-design-document--use-case-diagram)
+    - [Invite new Users](#invite-new-users)
+    - [User authentication](#user-authentication)
+    - [Sign up for new Teachers](#sign-up-for-new-teachers)
+    - [Create new public page](#create-new-public-page)
+    - [Create new private page](#create-new-private-page)
+    - [Manage classes](#manage-classes)
+    - [View class](#view-class)
+    - [Visitor enquiry](#visitor-enquiry)
+5. [Software Design Document | Sequence diagram](#software-design-document--sequence-diagram)
+    - [Invitation flow](#invitation-flow)
+    - [Authentication flow](#authentication-flow)
+    - [Teacher flow](#teacher-flow)
+    - [Student flow](#student-flow)
+    - [Visitor flow](#visitor-flow)
+6. [Software Design Document | UML Class Diagram](#software-design-document--uml-class-diagram)
+
+
 ## Project Description
  
 The pandemic demonstrated the potential of using digital services for small businesses. It showed that with the right customization, digital services for local services can be beneficial to their clients. 
@@ -112,8 +134,9 @@ The product should be customizable depending on the services type. Depending on 
 ## Software Design Document | Use Case Diagram
 ![Use Case](./docs/assets/images/Use%20Case.png)
 
+### Invite new Users
 <details> 
-    <summary> Invite new Users </summary>
+    <summary> ID: 1 | Admin sends email invite to join platform </summary>
 
 | Description Item         | Description                                                  |
 |---------------------------|--------------------------------------------------------------|
@@ -148,13 +171,14 @@ The product should be customizable depending on the services type. Depending on 
 
 </details>
 
+### User authentication
 <details>
-    <summary> Authentication </summary>
+    <summary> ID: 2 | OAuth2 authentication flow </summary>
 
 | Description Item         | Description                                                                               |
 |---------------------------|-------------------------------------------------------------------------------------------|
 | Use Case ID               | 2                                                                                         |
-| Use Case Description      | OAuth2 Authentication Flow                                                                |
+| Use Case Description      | OAuth2 authentication flow                                                                |
 | Corresponds to Need and Requirement | 4                                                                                         |
 |                           |                                                                                           |
 | Actor                     | User                                                                                      |
@@ -184,8 +208,9 @@ The product should be customizable depending on the services type. Depending on 
 
 </details>
 
+### Sign up for new Teachers
 <details>
-    <summary> Sign up for new Teachers </summary>
+    <summary> ID: 3 | OAuth2 User Signup with Email Invite and Profile Setup </summary>
 
 | Description Item         | Description                                                                                                    |
 |---------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -226,8 +251,9 @@ The product should be customizable depending on the services type. Depending on 
 
 </details>
 
+### Create new public page
 <details>
-  <summary> Create New Public Page | Teacher </summary>
+  <summary>  ID: 4 | Also known as a public page - This is the landing page for all teachers offering their services </summary>
 
 | Description Item                    | Description                                                                                     |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -266,8 +292,9 @@ The product should be customizable depending on the services type. Depending on 
 
 </details>
 
+### Create new private page
 <details>
-  <summary> Create New Private Page | Teacher </summary>
+  <summary> ID: 5 | Also known as a private page - This is the class service that the teacher is offering to signed up students </summary>
 
 | Description Item         | Description                                                                                                 |
 |---------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -306,8 +333,9 @@ The product should be customizable depending on the services type. Depending on 
 
 </details>
 
+### Manage classes
 <details>
-    <summary> Manage Classes </summary>
+    <summary> ID: 6 | Teacher Manages Content, Uploads Grades, Schedules, and Adds New Users  </summary>
 
 | Description Item         | Description                                                                                      |
 |---------------------------|--------------------------------------------------------------------------------------------------|
@@ -348,8 +376,9 @@ The product should be customizable depending on the services type. Depending on 
 
 </details>
 
+### View class
 <details>
-    <summary> View Class </summary>
+    <summary> ID: 7 | Student Accesses Post-Login Page with Hosted Materials   </summary>
 
 | Description Item         | Description                                                                                 |
 |---------------------------|---------------------------------------------------------------------------------------------|
@@ -383,8 +412,9 @@ The product should be customizable depending on the services type. Depending on 
 
 </details>
 
+### Visitor enquiry
 <details>
-  <summary> Enquiry | Visitor </summary>
+  <summary> ID: 8 | Visitor Makes an enquiry about a class or school on a public page </summary>
 
 | Description Item         | Description                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------|
