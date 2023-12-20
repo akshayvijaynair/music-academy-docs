@@ -528,4 +528,4 @@ Students will access private rooms with credentials provided by linked public ro
 
 
 ## Software Design Document | UML Class Diagram
-![UML Class](./docs/assets/uml-classes.png)
+![UML Class](./docs/assets/images/Class%20Diagram.png)
