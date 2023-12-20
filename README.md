@@ -36,7 +36,7 @@ The product should be customizable depending on the services type. Depending on 
 <br>
 <br>
 
-**:alert: All drawings in the document can be viewed on draw.io with this link: https://drive.google.com/file/d/1vY3AMZEzpr5EKsNsqYrfwSHpUBhaHytv/view?usp=sharing**
+All drawings in the document can be viewed on draw.io with this link: https://drive.google.com/file/d/1vY3AMZEzpr5EKsNsqYrfwSHpUBhaHytv/view?usp=sharing
 
 ## Features
 
