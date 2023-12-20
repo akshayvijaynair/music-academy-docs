@@ -39,7 +39,6 @@ The product should be customizable depending on the services type. Depending on 
  
 ## Features
 
-1.	Public site for advertising services.
 <details>
   <summary> Needs Elicitation (Click for details)</summary>
 
@@ -51,7 +50,8 @@ The product should be customizable depending on the services type. Depending on 
 
 </details>
 
-2.	Student portal to view lessons, access learning material, scheduling, and history.
+1.	Public site for advertising services.
+
 <details>
   <summary>Needs Elicitation (Click for details)</summary>
 
@@ -63,7 +63,8 @@ The product should be customizable depending on the services type. Depending on 
 
 </details>
 
-3.	Social space to interact with other students - This would have custom features to upload work/performances/ session.
+2.	Student portal to view lessons, access learning material, scheduling, and history.
+
 <details>
   <summary> Needs Elicitation (Click for details)</summary>
 
@@ -75,7 +76,8 @@ The product should be customizable depending on the services type. Depending on 
 
 </details>
 
-4.	Ability for teachers to upload content tailored to each student, moderate content, grade performances.
+3.	Social space to interact with other students - This would have custom features to upload work/performances/ session.
+
 <details>
   <summary> Needs Elicitation (Click for details)</summary>
 
@@ -87,7 +89,8 @@ The product should be customizable depending on the services type. Depending on 
 
 </details>
 
-5.	Ability for teachers to broadcast internal messages, livestream classes.
+4.	Ability for teachers to upload content tailored to each student, moderate content, grade performances.
+
 <details>
   <summary> Needs Elicitation (Click for details)</summary>
 
@@ -98,7 +101,8 @@ The product should be customizable depending on the services type. Depending on 
 
 </details>
 
-6.	Ability to group teachers together to create larger institutions.
+5.	Ability for teachers to broadcast internal messages, livestream classes.
+
 <details>
   <summary> Needs Elicitation (Click for details)</summary>
 
@@ -108,6 +112,12 @@ The product should be customizable depending on the services type. Depending on 
 | 2   | Administrative controls for grouped teachers. |
 
 </details>
+
+6.	Ability to group teachers together to create larger institutions.
+
+
+<br>
+<br>
 
 ## Needs and Requirements
 
@@ -130,8 +140,12 @@ The product should be customizable depending on the services type. Depending on 
 | 15  | Grouping feature for creating institutions.   | Group creation and management functionality. |
 | 16  | Administrative controls for grouped teachers. | Access controls and administrative roles.    |
 
+<br>
+<br>
 
 ## Software Design Document | Use Case Diagram
+<br>
+
 ![Use Case](./docs/assets/images/Use%20Case.png)
 
 ### Invite new Users
@@ -467,7 +481,11 @@ The product should be customizable depending on the services type. Depending on 
 
 </details>
 
+<br>
+<br>
+
 ## Software Design Document | Sequence diagram
+<br>
 
 ### Invitation flow
 This flow is the starting point for most teachers. Admins would create invites for new teachers to sign up to the platform. They would also act as relationship managers to invitees that accept
@@ -553,5 +571,10 @@ Students will access private rooms with credentials provided by linked public ro
 
 </details>
 
+<br>
+<br>
+
 ## Software Design Document | UML Class Diagram
+<br>
+
 ![UML Class](./docs/assets/images/Class%20Diagram.png)
