@@ -38,16 +38,21 @@ The product should be customizable depending on the services type. Depending on 
 
 ## Features
 
+<details>
+  <summary>Needs Elicitation Table <strong>(Click to show)</strong></summary>
+
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
 | 1   | A user-friendly interface for teacher profiles.|
 | 2   | Customization options for teacher profiles.    |
 | 3   | Ability to display services offered by teachers.|
 
+</details>
+
 1.	Public site for advertising services.
 
 <details>
-  <summary>Needs Elicitation (Click for table)</summary>
+   <summary>Needs Elicitation  <strong>(Click to show)</strong></summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -60,7 +65,7 @@ The product should be customizable depending on the services type. Depending on 
 2.	Student portal to view lessons, access learning material, scheduling, and history.
 
 <details>
-  <summary> Needs Elicitation (Click for table)</summary>
+   <summary>Needs Elicitation  <strong>(Click to show)</strong></summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -73,7 +78,7 @@ The product should be customizable depending on the services type. Depending on 
 3.	Social space to interact with other students - This would have custom features to upload work/performances/ session.
 
 <details>
-  <summary> Needs Elicitation(Click for table)</summary>
+   <summary>Needs Elicitation  <strong>(Click to show)</strong></summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -86,7 +91,7 @@ The product should be customizable depending on the services type. Depending on 
 4.	Ability for teachers to upload content tailored to each student, moderate content, grade performances.
 
 <details>
-  <summary> Needs Elicitation(Click for table)</summary>
+  <summary>Needs Elicitation  <strong>(Click to show)</strong></summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -98,7 +103,7 @@ The product should be customizable depending on the services type. Depending on 
 5.	Ability for teachers to broadcast internal messages, livestream classes.
 
 <details>
-  <summary> Needs Elicitation (Click for table)</summary>
+  <summary>Needs Elicitation  <strong>(Click to show)</strong></summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -144,7 +149,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### Invite new Users
 <details> 
-    <summary> ID: 1 | Admin sends email invite to join platform (Click for description)</summary>
+    <summary> ID: 1 | Admin sends email invite to join platform<br><strong>Click here to show use case description</strong></summary>
 
 | Description Item         | Description                                                  |
 |---------------------------|--------------------------------------------------------------|
@@ -183,7 +188,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### User authentication
 <details>
-    <summary> ID: 2 | OAuth2 authentication flow (Click for description)</summary>
+    <summary> ID: 2 | OAuth2 authentication flow  <br><strong>Click here to show use case description</strong></summary>
 
 | Description Item         | Description                                                                               |
 |---------------------------|-------------------------------------------------------------------------------------------|
@@ -222,7 +227,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### Sign up for new Teachers
 <details>
-    <summary> ID: 3 | OAuth2 User Signup with Email Invite and Profile Setup (Click for description)</summary>
+    <summary> ID: 3 | OAuth2 User Signup with Email Invite and Profile Setup <br><strong>Click here to show use case description</strong></summary>
 
 | Description Item         | Description                                                                                                    |
 |---------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -267,7 +272,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### Create new public page
 <details>
-  <summary>  ID: 4 | Also known as a public page - This is the landing page for all teachers offering their services (Click for description)</summary>
+  <summary>  ID: 4 | Also known as a public page - This is the landing page for all teachers offering their services <br><strong>Click here to show use case description</strong></summary>
 
 | Description Item                    | Description                                                                                     |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -310,7 +315,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### Create new private page
 <details>
-  <summary> ID: 5 | Also known as a private page - This is the class service that the teacher is offering to signed up students (Click for description)</summary>
+  <summary> ID: 5 | Also known as a private page - This is the class service that the teacher is offering to signed up students <br><strong>Click here to show use case description</strong></summary>
 
 | Description Item         | Description                                                                                                 |
 |---------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -353,7 +358,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### Manage classes
 <details>
-    <summary> ID: 6 | Teacher Manages Content, Uploads Grades, Schedules, and Adds New Users (Click for description)</summary>
+    <summary> ID: 6 | Teacher Manages Content, Uploads Grades, Schedules, and Adds New Users <br><strong>Click here to show use case description</strong></summary>
 
 | Description Item         | Description                                                                                      |
 |---------------------------|--------------------------------------------------------------------------------------------------|
@@ -398,7 +403,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### View class
 <details>
-    <summary> ID: 7 | Student Accesses Post-Login Page with Hosted Materials (Click for description)</summary>
+    <summary> ID: 7 | Student Accesses Post-Login Page with Hosted Materials <br><strong>Click here to show use case description</strong></summary>
 
 | Description Item         | Description                                                                                 |
 |---------------------------|---------------------------------------------------------------------------------------------|
@@ -436,7 +441,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### Visitor enquiry
 <details>
-  <summary> ID: 8 | Visitor Makes an enquiry about a class or school on a public page (Click for description)</summary>
+  <summary> ID: 8 | Visitor Makes an enquiry about a class or school on a public page <br><strong>Click here to show use case description</strong></summary>
 
 | Description Item         | Description                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------|
@@ -485,7 +490,7 @@ The product should be customizable depending on the services type. Depending on 
 This flow is the starting point for most teachers. Admins would create invites for new teachers to sign up to the platform. They would also act as relationship managers to invitees that accept
 
 <details>
-  <summary> Invitation Flow (Click to show details)</summary>
+  <summary> Invitation Flow <br><strong>Click here to show sequence diagram</strong></summary>
 
 ![Invite | Admin](./docs/assets/images/Sequence%20Diagram-Invite%20_%20Admin.png)
 
@@ -496,7 +501,7 @@ This flow is the starting point for most teachers. Admins would create invites f
 ### Authentication flow
 This is the most common authentication flow for all user roles on the platform. Using OAuth2 as a authentication platform, we can make do without some of the usual login processes for expediency
 <details>
-  <summary> Authentication Flow (Click to show details)</summary>
+  <summary> Authentication Flow <br><strong>Click here to show sequence diagram</strong></summary>
 
 ![Authentication | Users](./docs/assets/images/Sequence%20Diagram-Authentication%20Flow%20_%20User.png)
 
@@ -508,7 +513,7 @@ This is the most common authentication flow for all user roles on the platform. 
 Teachers will be able to create their own public pages, add in relevant content. They will also be able to create private rooms that is linked to each public room. This would be the student pages that would host the learning content
 
 <details>
-  <summary> Sign up (Click to show details)</summary>
+  <summary> Sign up <br><strong>Click here to show sequence diagram</strong></summary>
 
 ![Sign up | Teacher](./docs/assets/images/Sequence%20Diagram-Sign-up%20_%20Teacher.png)
 
@@ -517,7 +522,7 @@ Teachers will be able to create their own public pages, add in relevant content.
 --- 
 
 <details>
-  <summary> Create Public Room Flow (Click to show details)</summary>
+  <summary> Create Public Room Flow <br><strong>Click here to show sequence diagram</strong></summary>
 
 ![Create Public Room | Teacher](./docs/assets/images/Sequence%20Diagram-Create%20Public%20Page%20_%20Teacher.png)
 
@@ -527,7 +532,7 @@ Teachers will be able to create their own public pages, add in relevant content.
 --- 
 
 <details>
-  <summary> Create Private Room Flow (Click to show details)</summary>
+  <summary> Create Private Room Flow <br><strong>Click here to show sequence diagram</strong></summary>
 
 ![Create Private Room | Teacher](./docs/assets/images/Sequence%20Diagram-Create%20Private%20Page%20_%20Teacher.png)
 
@@ -537,7 +542,7 @@ Teachers will be able to create their own public pages, add in relevant content.
 --- 
 
 <details>
-  <summary> Manage Private Room Flow (Click to show details)</summary>
+  <summary> Manage Private Room Flow <br><strong>Click here to show sequence diagram</strong></summary>
 
 ![Manage Private Room | Teacher](./docs/assets/images/Sequence%20Diagram-Manage%20Class%20_%20Teacher.png)
 
@@ -548,7 +553,7 @@ Teachers will be able to create their own public pages, add in relevant content.
 ### Student flow
 Students will access private rooms with credentials provided by linked public room owners. There-fore each public room will have different login credentials.
 <details>
-  <summary> Student flow to view classes (Click to show details)</summary>
+  <summary> Student flow to view classes <br><strong>Click here to show sequence diagram</strong></summary>
 
 ![View Class | Student](./docs/assets/images/Sequence%20Diagram-View%20Class%20_%20Student.png)
 
@@ -558,7 +563,7 @@ Students will access private rooms with credentials provided by linked public ro
 
 ### Visitor flow
 <details>
-  <summary> Enquiry flow for visitors (Click to show details)</summary>
+  <summary> Enquiry flow for visitors <br><strong>Click here to show sequence diagram</strong></summary>
   
  
 ![Enquiry Flow | Visitor](./docs/assets/images/Sequence%20Diagram-Enquiry%20Flow%20_%20Visitor.png)
