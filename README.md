@@ -36,10 +36,12 @@ The product should be customizable depending on the services type. Depending on 
 <br>
 <br>
 
+**:alert: All drawings in the document can be viewed on draw.io with this link: https://drive.google.com/file/d/1vY3AMZEzpr5EKsNsqYrfwSHpUBhaHytv/view?usp=sharing**
+
 ## Features
 
 <details>
-  <summary>Needs Elicitation Table <strong>(Click to show)</strong></summary>
+  <summary>Needs Elicitation Table  | <strong>Click to show</strong></summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -52,7 +54,7 @@ The product should be customizable depending on the services type. Depending on 
 1.	Public site for advertising services.
 
 <details>
-   <summary>Needs Elicitation  <strong>(Click to show)</strong></summary>
+   <summary>Needs Elicitation   |  <strong> Click to show </strong></summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -65,7 +67,7 @@ The product should be customizable depending on the services type. Depending on 
 2.	Student portal to view lessons, access learning material, scheduling, and history.
 
 <details>
-   <summary>Needs Elicitation  <strong>(Click to show)</strong></summary>
+   <summary>Needs Elicitation  |  <strong> Click to show</strong></summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -78,7 +80,7 @@ The product should be customizable depending on the services type. Depending on 
 3.	Social space to interact with other students - This would have custom features to upload work/performances/ session.
 
 <details>
-   <summary>Needs Elicitation  <strong>(Click to show)</strong></summary>
+   <summary>Needs Elicitation  |  <strong> Click to show </strong></summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -91,7 +93,7 @@ The product should be customizable depending on the services type. Depending on 
 4.	Ability for teachers to upload content tailored to each student, moderate content, grade performances.
 
 <details>
-  <summary>Needs Elicitation  <strong>(Click to show)</strong></summary>
+  <summary>Needs Elicitation  |  <strong> Click to show </strong></summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -103,7 +105,7 @@ The product should be customizable depending on the services type. Depending on 
 5.	Ability for teachers to broadcast internal messages, livestream classes.
 
 <details>
-  <summary>Needs Elicitation  <strong>(Click to show)</strong></summary>
+  <summary>Needs Elicitation  |  <strong> Click to show </strong></summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
