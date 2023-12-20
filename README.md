@@ -185,7 +185,7 @@ The product should be customizable depending on the services type. Depending on 
 |                           |                                                              |
 
 </details>
-
+<br>
 --- 
 
 ### User authentication
@@ -224,7 +224,7 @@ The product should be customizable depending on the services type. Depending on 
 
 
 </details>
-
+<br>
 --- 
 
 ### Sign up for new Teachers
@@ -269,7 +269,7 @@ The product should be customizable depending on the services type. Depending on 
 |                           |                                                                                                                |
 
 </details>
-
+<br>
 --- 
 
 ### Create new public page
@@ -312,7 +312,7 @@ The product should be customizable depending on the services type. Depending on 
 |                                     |                                                                                                 |
 
 </details>
-
+<br>
 --- 
 
 ### Create new private page
@@ -355,7 +355,7 @@ The product should be customizable depending on the services type. Depending on 
 |                           |                                                                                                             |
 
 </details>
-
+<br>
 --- 
 
 ### Manage classes
@@ -400,7 +400,7 @@ The product should be customizable depending on the services type. Depending on 
 |                           |                                                                                                  |
 
 </details>
-
+<br>
 --- 
 
 ### View class
@@ -438,7 +438,7 @@ The product should be customizable depending on the services type. Depending on 
 |                           |                                                                                             |
 
 </details>
-
+<br>
 --- 
 
 ### Visitor enquiry
@@ -497,7 +497,7 @@ This flow is the starting point for most teachers. Admins would create invites f
 ![Invite | Admin](./docs/assets/images/Sequence%20Diagram-Invite%20_%20Admin.png)
 
 </details>
-
+<br>
 --- 
 
 ### Authentication flow
@@ -508,7 +508,7 @@ This is the most common authentication flow for all user roles on the platform. 
 ![Authentication | Users](./docs/assets/images/Sequence%20Diagram-Authentication%20Flow%20_%20User.png)
 
 </details>
-
+<br>
 --- 
 
 ### Teacher flow
@@ -520,7 +520,7 @@ Teachers will be able to create their own public pages, add in relevant content.
 ![Sign up | Teacher](./docs/assets/images/Sequence%20Diagram-Sign-up%20_%20Teacher.png)
 
 </details>
-
+<br>
 --- 
 
 <details>
@@ -530,7 +530,7 @@ Teachers will be able to create their own public pages, add in relevant content.
 
 
 </details>
-
+<br>
 --- 
 
 <details>
@@ -540,7 +540,7 @@ Teachers will be able to create their own public pages, add in relevant content.
 
 
 </details>
-
+<br>
 --- 
 
 <details>
@@ -549,7 +549,7 @@ Teachers will be able to create their own public pages, add in relevant content.
 ![Manage Private Room | Teacher](./docs/assets/images/Sequence%20Diagram-Manage%20Class%20_%20Teacher.png)
 
 </details>
-
+<br>
 --- 
 
 ### Student flow
@@ -560,7 +560,7 @@ Students will access private rooms with credentials provided by linked public ro
 ![View Class | Student](./docs/assets/images/Sequence%20Diagram-View%20Class%20_%20Student.png)
 
 </details>
-
+<br>
 --- 
 
 ### Visitor flow
