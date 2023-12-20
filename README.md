@@ -528,5 +528,4 @@ Students will access private rooms with credentials provided by linked public ro
 
 
 ## Software Design Document | UML Class Diagram
-<img src="./docs/assets/images/Class%20Diagram.png" width="2151" height="2721" alt="UML Class">
-
+![UML Class](./docs/assets/images/Class%20Diagram.png)
