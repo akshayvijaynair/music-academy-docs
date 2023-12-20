@@ -39,21 +39,16 @@ The product should be customizable depending on the services type. Depending on 
  
 ## Features
 
-<details>
-  <summary> Needs Elicitation (Click for details)</summary>
-
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
 | 1   | A user-friendly interface for teacher profiles.|
 | 2   | Customization options for teacher profiles.    |
 | 3   | Ability to display services offered by teachers.|
 
-</details>
-
 1.	Public site for advertising services.
 
 <details>
-  <summary>Needs Elicitation (Click for details)</summary>
+  <summary>Needs Elicitation (Click for table)</summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -66,7 +61,7 @@ The product should be customizable depending on the services type. Depending on 
 2.	Student portal to view lessons, access learning material, scheduling, and history.
 
 <details>
-  <summary> Needs Elicitation (Click for details)</summary>
+  <summary> Needs Elicitation (Click for table)</summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -79,7 +74,7 @@ The product should be customizable depending on the services type. Depending on 
 3.	Social space to interact with other students - This would have custom features to upload work/performances/ session.
 
 <details>
-  <summary> Needs Elicitation (Click for details)</summary>
+  <summary> Needs Elicitation(Click for table)</summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -92,7 +87,7 @@ The product should be customizable depending on the services type. Depending on 
 4.	Ability for teachers to upload content tailored to each student, moderate content, grade performances.
 
 <details>
-  <summary> Needs Elicitation (Click for details)</summary>
+  <summary> Needs Elicitation(Click for table)</summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -104,7 +99,7 @@ The product should be customizable depending on the services type. Depending on 
 5.	Ability for teachers to broadcast internal messages, livestream classes.
 
 <details>
-  <summary> Needs Elicitation (Click for details)</summary>
+  <summary> Needs Elicitation (Click for table)</summary>
 
 | #   | Need                                           |
 | --- | ---------------------------------------------- |
@@ -150,7 +145,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### Invite new Users
 <details> 
-    <summary> ID: 1 | Admin sends email invite to join platform (Click for details)</summary>
+    <summary> ID: 1 | Admin sends email invite to join platform (Click for description)</summary>
 
 | Description Item         | Description                                                  |
 |---------------------------|--------------------------------------------------------------|
@@ -189,7 +184,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### User authentication
 <details>
-    <summary> ID: 2 | OAuth2 authentication flow (Click for details)</summary>
+    <summary> ID: 2 | OAuth2 authentication flow (Click for description)</summary>
 
 | Description Item         | Description                                                                               |
 |---------------------------|-------------------------------------------------------------------------------------------|
@@ -228,7 +223,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### Sign up for new Teachers
 <details>
-    <summary> ID: 3 | OAuth2 User Signup with Email Invite and Profile Setup (Click for details)</summary>
+    <summary> ID: 3 | OAuth2 User Signup with Email Invite and Profile Setup (Click for description)</summary>
 
 | Description Item         | Description                                                                                                    |
 |---------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -273,7 +268,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### Create new public page
 <details>
-  <summary>  ID: 4 | Also known as a public page - This is the landing page for all teachers offering their services (Click for details)</summary>
+  <summary>  ID: 4 | Also known as a public page - This is the landing page for all teachers offering their services (Click for description)</summary>
 
 | Description Item                    | Description                                                                                     |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -316,7 +311,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### Create new private page
 <details>
-  <summary> ID: 5 | Also known as a private page - This is the class service that the teacher is offering to signed up students (Click for details)</summary>
+  <summary> ID: 5 | Also known as a private page - This is the class service that the teacher is offering to signed up students (Click for description)</summary>
 
 | Description Item         | Description                                                                                                 |
 |---------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -359,7 +354,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### Manage classes
 <details>
-    <summary> ID: 6 | Teacher Manages Content, Uploads Grades, Schedules, and Adds New Users (Click for details)</summary>
+    <summary> ID: 6 | Teacher Manages Content, Uploads Grades, Schedules, and Adds New Users (Click for description)</summary>
 
 | Description Item         | Description                                                                                      |
 |---------------------------|--------------------------------------------------------------------------------------------------|
@@ -404,7 +399,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### View class
 <details>
-    <summary> ID: 7 | Student Accesses Post-Login Page with Hosted Materials (Click for details)</summary>
+    <summary> ID: 7 | Student Accesses Post-Login Page with Hosted Materials (Click for description)</summary>
 
 | Description Item         | Description                                                                                 |
 |---------------------------|---------------------------------------------------------------------------------------------|
@@ -442,7 +437,7 @@ The product should be customizable depending on the services type. Depending on 
 
 ### Visitor enquiry
 <details>
-  <summary> ID: 8 | Visitor Makes an enquiry about a class or school on a public page (Click for details)</summary>
+  <summary> ID: 8 | Visitor Makes an enquiry about a class or school on a public page (Click for description)</summary>
 
 | Description Item         | Description                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------|
