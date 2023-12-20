@@ -186,6 +186,7 @@ All drawings in the document can be viewed on draw.io with this <a href="https:/
 
 </details>
 <br>
+
 --- 
 
 ### User authentication
@@ -225,6 +226,7 @@ All drawings in the document can be viewed on draw.io with this <a href="https:/
 
 </details>
 <br>
+
 --- 
 
 ### Sign up for new Teachers
@@ -270,6 +272,7 @@ All drawings in the document can be viewed on draw.io with this <a href="https:/
 
 </details>
 <br>
+
 --- 
 
 ### Create new public page
@@ -313,6 +316,7 @@ All drawings in the document can be viewed on draw.io with this <a href="https:/
 
 </details>
 <br>
+
 --- 
 
 ### Create new private page
@@ -356,6 +360,7 @@ All drawings in the document can be viewed on draw.io with this <a href="https:/
 
 </details>
 <br>
+
 --- 
 
 ### Manage classes
@@ -401,6 +406,7 @@ All drawings in the document can be viewed on draw.io with this <a href="https:/
 
 </details>
 <br>
+
 --- 
 
 ### View class
@@ -439,6 +445,7 @@ All drawings in the document can be viewed on draw.io with this <a href="https:/
 
 </details>
 <br>
+
 --- 
 
 ### Visitor enquiry
@@ -498,6 +505,7 @@ This flow is the starting point for most teachers. Admins would create invites f
 
 </details>
 <br>
+
 --- 
 
 ### Authentication flow
@@ -509,6 +517,7 @@ This is the most common authentication flow for all user roles on the platform. 
 
 </details>
 <br>
+
 --- 
 
 ### Teacher flow
@@ -521,6 +530,7 @@ Teachers will be able to create their own public pages, add in relevant content.
 
 </details>
 <br>
+
 --- 
 
 <details>
@@ -531,6 +541,7 @@ Teachers will be able to create their own public pages, add in relevant content.
 
 </details>
 <br>
+
 --- 
 
 <details>
@@ -541,6 +552,7 @@ Teachers will be able to create their own public pages, add in relevant content.
 
 </details>
 <br>
+
 --- 
 
 <details>
@@ -550,6 +562,7 @@ Teachers will be able to create their own public pages, add in relevant content.
 
 </details>
 <br>
+
 --- 
 
 ### Student flow
@@ -561,6 +574,7 @@ Students will access private rooms with credentials provided by linked public ro
 
 </details>
 <br>
+
 --- 
 
 ### Visitor flow
